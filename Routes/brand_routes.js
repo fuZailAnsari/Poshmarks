@@ -2,7 +2,7 @@ const express = require ('express')
 const router = express.Router()
 
 const brandController = require('../controllers/brand_controller')
-
+// all routes for brand 
 router.post('/addbrand',brandController.addBrand)
 router.get('/getallbrand',brandController.getAllBrand)
 router.get('/getabrandby/:id',brandController.getBrandById)
